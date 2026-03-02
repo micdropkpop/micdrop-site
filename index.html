@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mic Drop K-Pop Shop | Savannah's First K-Pop Store</title>
+<meta name="description" content="Mic Drop K-Pop Shop — Savannah's first K-pop store! Albums, merch, Sanrio, blind boxes & more. Open Wed-Sat 12:30-7pm. 7601 Waters Ave, Suite C, Savannah GA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- ANALYTICS: uncomment when live
+<script data-goatcounter="https://micdropkpop.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+-->
+</head>
+<body data-theme="blossom">
+
+<!-- THEME PICKER — Mom picks her favorite, then we remove this bar -->
+<div class="theme-bar" id="themebar">
+  <span>Pick a look:</span>
+  <button class="theme-btn active" onclick="setTheme('blossom')">Blossom</button>
+  <button class="theme-btn" onclick="setTheme('stage-lights')">Stage Lights</button>
+  <button class="theme-btn" onclick="setTheme('peach-dream')">Peach Dream</button>
+</div>
+
+<!-- NAV -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <img src="images/logo.png" alt="Mic Drop">
+      <strong>Mic Drop</strong>
+    </a>
+    <div class="nav-links">
+      <a href="#visit">Visit</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#connect">Connect</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="logo-wrap">
+      <img src="images/logo.png" alt="Mic Drop K-Pop Shop Logo" width="140" height="140">
+    </div>
+
+    <h1>Mic Drop</h1>
+    <p class="tagline">Savannah's First K-Pop Store</p>
+
+    <div class="award">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      Best New Store 2024
+    </div>
+
+    <div class="hero-info">
+      <div>Wednesday &ndash; Saturday &nbsp;&middot;&nbsp; 12:30 &ndash; 7:00 PM</div>
+      <div class="hero-divider"></div>
+      <div>7601 Waters Ave, Suite C &nbsp;&middot;&nbsp; Savannah, GA</div>
+      <div><a href="tel:+19126729294">(912) 672-9294</a></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+  </div>
+</section>
+
+<!-- WHAT WE CARRY -->
+<div class="section-alt">
+  <div class="section">
+    <div class="section-head">
+      <h2>What We Carry</h2>
+      <p>Everything for every kind of fan</p>
+    </div>
+    <div class="categories">
+      <div class="cat"><span class="cat-icon">&#x1F3B5;</span><span class="cat-name">K-Pop Albums</span></div>
+      <div class="cat"><span class="cat-icon">&#x1F455;</span><span class="cat-name">Merch &amp; Apparel</span></div>
+      <div class="cat"><span class="cat-icon">&#x1F431;</span><span class="cat-name">Sanrio</span></div>
+      <div class="cat"><span class="cat-icon">&#x1F381;</span><span class="cat-name">Blind Boxes</span></div>
+      <div class="cat"><span class="cat-icon">&#x1F3A8;</span><span class="cat-name">Fan Art</span></div>
+      <div class="cat"><span class="cat-icon">&#x1F0CF;</span><span class="cat-name">Trading Cards</span></div>
+      <div class="cat"><span class="cat-icon">&#x1F3A4;</span><span class="cat-name">Concert Gear</span></div>
+      <div class="cat"><span class="cat-icon">&#x1F496;</span><span class="cat-name">Accessories</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- VISIT -->
+<div class="section" id="visit">
+  <div class="section-head">
+    <h2>Come Visit</h2>
+    <p>Albums, merch, Sanrio, blind boxes, fan art &amp; concert supplies</p>
+  </div>
+  <div class="info-grid">
+    <div class="card">
+      <h3>Hours</h3>
+      <div class="hours-row"><span class="hours-day">Monday</span><span class="hours-closed">Closed</span></div>
+      <div class="hours-row"><span class="hours-day">Tuesday</span><span class="hours-closed">Closed</span></div>
+      <div class="hours-row"><span class="hours-day">Wednesday</span><span class="hours-time">12:30 &ndash; 7:00 PM</span></div>
+      <div class="hours-row"><span class="hours-day">Thursday</span><span class="hours-time">12:30 &ndash; 7:00 PM</span></div>
+      <div class="hours-row"><span class="hours-day">Friday</span><span class="hours-time">12:30 &ndash; 7:00 PM</span></div>
+      <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">12:30 &ndash; 7:00 PM</span></div>
+      <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-closed">Closed</span></div>
+    </div>
+    <div class="card">
+      <h3>Location</h3>
+      <div class="loc-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div>7601 Waters Ave, Suite C<br>Savannah, GA 31406</div>
+      </div>
+      <div class="loc-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <a href="tel:+19126729294" data-track="phone">(912) 672-9294</a>
+      </div>
+      <div class="loc-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+        <div>Wheelchair accessible &middot; Free parking</div>
+      </div>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=7601+Waters+Ave+Suite+C+Savannah+GA+31406" target="_blank" rel="noopener" class="btn" data-track="directions">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+        Get Directions
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- MAP -->
+<div class="map-section">
+  <div class="map-frame">
+    <iframe src="https://maps.google.com/maps?q=7601+Waters+Ave+Suite+C+Savannah+GA+31406&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Store location"></iframe>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="section-alt" id="gallery">
+  <div class="section">
+    <div class="section-head">
+      <h2>Shop Vibes</h2>
+      <p>Come check us out in person</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="images/gallery/gallery_000_thumb.jpg" alt="Shop photo" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/gallery_001_thumb.jpg" alt="Shop photo" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/gallery_002_thumb.jpg" alt="Shop photo" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/gallery_003_thumb.jpg" alt="Shop photo" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/gallery_004_thumb.jpg" alt="Shop photo" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/gallery_005_thumb.jpg" alt="Shop photo" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/gallery_006_thumb.jpg" alt="Shop photo" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/gallery_007_thumb.jpg" alt="Shop photo" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/gallery_008_thumb.jpg" alt="Shop photo" loading="lazy"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONNECT -->
+<div class="section" id="connect">
+  <div class="section-head">
+    <h2>Follow the Drop</h2>
+    <p>New arrivals, restocks &amp; store vibes</p>
+  </div>
+  <div class="social-links">
+    <a href="https://www.instagram.com/micdropkpopshop/" target="_blank" rel="noopener" class="social-link ig">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      @micdropkpopshop
+    </a>
+    <a href="https://www.tiktok.com/@micdropkpopshop" target="_blank" rel="noopener" class="social-link tt">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.46V13a8.28 8.28 0 005.58 2.17v-3.44a4.85 4.85 0 01-1.99-.44l-.01-4.6z"/></svg>
+      @micdropkpopshop
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p><strong>Mic Drop K-Pop Shop</strong></p>
+  <p style="margin-top:0.3rem;">7601 Waters Ave, Suite C &middot; Savannah, GA 31406 &middot; (912) 672-9294</p>
+  <p style="margin-top:0.6rem;">&copy; 2026 Mic Drop K-Pop Shop</p>
+</footer>
+
+<script>
+function setTheme(name) {
+  document.body.setAttribute('data-theme', name);
+  document.querySelectorAll('.theme-btn').forEach(function(btn) {
+    var btnName = btn.textContent.trim().toLowerCase().replace(/\s+/g, '-');
+    btn.classList.toggle('active', btnName === name);
+  });
+  try { localStorage.setItem('micdrop-theme', name); } catch(e) {}
+}
+try {
+  var saved = localStorage.getItem('micdrop-theme');
+  if (saved) setTheme(saved);
+} catch(e) {}
+// ANALYTICS: uncomment when GoatCounter is live
+// Track directions clicks and phone taps — the two metrics that matter
+// document.querySelectorAll('[data-track]').forEach(function(el) {
+//   el.addEventListener('click', function() {
+//     if (window.goatcounter) {
+//       window.goatcounter.count({path: 'action/' + el.getAttribute('data-track'), event: true});
+//     }
+//   });
+// });
+
+document.addEventListener('click', function(e) {
+  var nav = document.querySelector('.nav-links');
+  if (nav && nav.classList.contains('open') && !e.target.closest('.site-nav')) {
+    nav.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>
