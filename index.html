@@ -3,48 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mic Drop K-Pop Shop | Savannah's First K-Pop Store</title>
-<meta name="description" content="Mic Drop K-Pop Shop — Savannah's first K-pop store! Albums, merch, Sanrio, blind boxes & more. Open Wed-Sat 12:30-7pm. 7601 Waters Ave, Suite C, Savannah GA.">
+<title>Mic Drop Kpop Shop | Savannah's First Kpop Store</title>
+<meta name="description" content="Mic Drop Kpop Shop — Savannah's first Kpop store! Albums, merch, Sanrio, blind boxes & more. Open Wed-Sat 12:30-7pm. 7601 Waters Ave, Suite C, Savannah GA.">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Mic Drop K-Pop Shop">
-<meta property="og:description" content="Savannah's first K-pop store! Albums, merch, Sanrio, blind boxes & more. Open Wed-Sat 12:30-7pm.">
-<meta property="og:image" content="images/og-image.jpg">
+<meta property="og:title" content="Mic Drop Kpop Shop">
+<meta property="og:description" content="Savannah's first Kpop store! Albums, merch, Sanrio, blind boxes & more. Open Wed-Sat 12:30-7pm.">
+<meta property="og:image" content="https://micdropkpop.com/images/og-image.jpg">
 <meta property="og:url" content="https://micdropkpop.com">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mic Drop K-Pop Shop">
-<meta name="twitter:description" content="Savannah's first K-pop store! Albums, merch, Sanrio, blind boxes & more.">
-<meta name="twitter:image" content="images/og-image.jpg">
+<meta name="twitter:title" content="Mic Drop Kpop Shop">
+<meta name="twitter:description" content="Savannah's first Kpop store! Albums, merch, Sanrio, blind boxes & more.">
+<meta name="twitter:image" content="https://micdropkpop.com/images/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="canonical" href="https://micdropkpop.com/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Mic Drop Kpop Shop",
+  "image": "https://micdropkpop.com/images/logo.png",
+  "url": "https://micdropkpop.com",
+  "telephone": "+19126729294",
+  "description": "Savannah's first Kpop store. Albums, merch, Sanrio, blind boxes, photocards, and more.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7601 Waters Ave, Suite C",
+    "addressLocality": "Savannah",
+    "addressRegion": "GA",
+    "postalCode": "31406",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 32.0052,
+    "longitude": -81.1064
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday","Saturday"], "opens": "12:30", "closes": "19:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Sunday"], "opens": "00:00", "closes": "00:00"}
+  ],
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.instagram.com/micdropkpopshop/",
+    "https://www.tiktok.com/@micdropkpopshop"
+  ]
+}
+</script>
 <!-- ANALYTICS: uncomment when live
 <script data-goatcounter="https://micdropkpop.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 -->
 </head>
-<body data-theme="blossom">
-
-<!-- THEME PICKER — Mom picks her favorite, then we remove this bar -->
-<div class="theme-bar" id="themebar">
-  <span>Pick a look:</span>
-  <button class="theme-btn active" onclick="setTheme('blossom')">Blossom</button>
-  <button class="theme-btn" onclick="setTheme('stage-lights')">Stage Lights</button>
-  <button class="theme-btn" onclick="setTheme('peach-dream')">Peach Dream</button>
-</div>
+<body data-theme="lavender">
 
 <!-- NAV -->
 <nav class="site-nav">
   <div class="nav-inner">
-    <a href="#" class="nav-brand">
+    <a href="/" class="nav-brand">
       <img src="images/logo.png" alt="Mic Drop">
-      <strong>Mic Drop</strong>
+      <strong>Mic Drop Kpop</strong>
     </a>
     <div class="nav-links">
       <a href="#visit">Visit</a>
       <a href="#gallery">Gallery</a>
       <a href="#connect">Connect</a>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">&#9790;</button>
     </div>
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
   </div>
@@ -54,11 +81,11 @@
 <section class="hero">
   <div class="hero-content">
     <div class="logo-wrap">
-      <img src="images/logo.png" alt="Mic Drop K-Pop Shop Logo" width="140" height="140">
+      <img src="images/logo.png" alt="Mic Drop Kpop Shop Logo" width="180" height="180">
     </div>
 
-    <h1>Mic Drop</h1>
-    <p class="tagline">Savannah's First K-Pop Store</p>
+    <h1>Mic Drop Kpop</h1>
+    <p class="tagline">Savannah's First Kpop Store</p>
 
     <div class="award">
       <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -70,6 +97,17 @@
       <div class="hero-divider"></div>
       <div>7601 Waters Ave, Suite C &nbsp;&middot;&nbsp; Savannah, GA</div>
       <div><a href="tel:+19126729294">(912) 672-9294</a></div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="https://www.instagram.com/micdropkpopshop/" target="_blank" rel="noopener" class="btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+        Follow Us
+      </a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=7601+Waters+Ave+Suite+C+Savannah+GA+31406" target="_blank" rel="noopener" class="btn-outline" data-track="directions">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+        Get Directions
+      </a>
     </div>
   </div>
 
@@ -83,15 +121,15 @@
   <div class="section">
     <div class="section-head">
       <h2>What We Carry</h2>
-      <p>Something for every kind of fan</p>
+      <p>From comeback albums to POB photocards, we've got your bias covered</p>
     </div>
     <div class="categories">
-      <div class="cat"><span class="cat-icon">&#x1F3B5;</span><span class="cat-name">K-Pop Albums</span></div>
-      <div class="cat"><span class="cat-icon">&#x1F455;</span><span class="cat-name">Merch &amp; Apparel</span></div>
+      <div class="cat"><span class="cat-icon">&#x1F3B5;</span><span class="cat-name">Kpop Albums</span></div>
+      <div class="cat"><span class="cat-icon">&#x1F455;</span><span class="cat-name">Merch</span></div>
       <div class="cat"><span class="cat-icon">&#x1F380;</span><span class="cat-name">Sanrio</span></div>
       <div class="cat"><span class="cat-icon">&#x1F381;</span><span class="cat-name">Blind Boxes</span></div>
       <div class="cat"><span class="cat-icon">&#x1F3A8;</span><span class="cat-name">Fan Art</span></div>
-      <div class="cat"><span class="cat-icon">&#x1F0CF;</span><span class="cat-name">Trading Cards</span></div>
+      <div class="cat"><span class="cat-icon">&#x1F0CF;</span><span class="cat-name">Photocards</span></div>
       <div class="cat"><span class="cat-icon">&#x1F3A4;</span><span class="cat-name">Concert Gear</span></div>
       <div class="cat"><span class="cat-icon">&#x1F496;</span><span class="cat-name">Accessories</span></div>
     </div>
@@ -102,7 +140,7 @@
 <div class="section" id="visit">
   <div class="section-head">
     <h2>Come Visit</h2>
-    <p>Come see us! We're always getting new stuff in</p>
+    <p>New albums and restocks every week, plus events you won't want to miss</p>
   </div>
   <div class="info-grid">
     <div class="card">
@@ -144,21 +182,50 @@
   </div>
 </div>
 
+<!-- COMMUNITY -->
+<div class="section">
+  <div class="section-head">
+    <h2>More Than a Store</h2>
+    <p>A real place where kpop fans come together</p>
+  </div>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p class="testimonial-text" style="font-style:normal;">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="color:var(--gold);vertical-align:middle;margin-right:0.3rem;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <strong>Best New Store 2024</strong>
+      </p>
+      <div class="testimonial-source">Connect Savannah Readers' Choice</div>
+    </div>
+    <div class="testimonial">
+      <p class="testimonial-text" style="font-style:normal;">
+        Cupsleeve events, concert watch parties, and photocard trading days at the shop
+      </p>
+      <div class="testimonial-source">See the gallery below</div>
+    </div>
+    <div class="testimonial">
+      <p class="testimonial-text" style="font-style:normal;">
+        <strong>@micdropkpopshop</strong> on Instagram for restocks, new arrivals, and event announcements
+      </p>
+      <div class="testimonial-source"><a href="https://www.instagram.com/micdropkpopshop/" target="_blank" rel="noopener">Follow along</a></div>
+    </div>
+  </div>
+</div>
+
 <!-- GALLERY -->
 <div class="section-alt" id="gallery">
   <div class="section">
     <div class="section-head">
       <h2>Shop Vibes</h2>
-      <p>We hope to see you soon</p>
+      <p>Where fans hang out, trade photocards, and catch watch parties</p>
     </div>
     <div class="gallery-grid">
       <div class="gallery-item"><img src="images/gallery/gallery_000_thumb.jpg" alt="Best New Store 2024 award from Connect Savannah" loading="lazy"></div>
       <div class="gallery-item"><img src="images/gallery/gallery_001_thumb.jpg" alt="Fans trading photocards on the purple couch" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/gallery/gallery_002_thumb.jpg" alt="Inside the shop — albums, Sanrio, and K-pop merch on display" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/gallery_002_thumb.jpg" alt="Inside the shop — albums, Sanrio, and Kpop merch on display" loading="lazy"></div>
       <div class="gallery-item"><img src="images/gallery/gallery_003_thumb.jpg" alt="Hobi Day cupsleeve event cards" loading="lazy"></div>
       <div class="gallery-item"><img src="images/gallery/gallery_004_thumb.jpg" alt="Concert watch party with lightsticks and fans" loading="lazy"></div>
       <div class="gallery-item"><img src="images/gallery/gallery_005_thumb.jpg" alt="BTS albums on display" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/gallery/gallery_006_thumb.jpg" alt="Happy customer with a K-pop plushie" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/gallery_006_thumb.jpg" alt="Happy customer with a Kpop plushie" loading="lazy"></div>
       <div class="gallery-item"><img src="images/gallery/gallery_007_thumb.jpg" alt="Handmade decoden photocard frames" loading="lazy"></div>
       <div class="gallery-item"><img src="images/gallery/gallery_008_thumb.jpg" alt="New Cravity Sun Seeker albums just in" loading="lazy"></div>
     </div>
@@ -169,55 +236,90 @@
 <div class="section" id="connect">
   <div class="section-head">
     <h2>Follow the Drop</h2>
-    <p>New arrivals, restocks &amp; store vibes</p>
+    <p>Restocks, new drops, and behind-the-counter content</p>
   </div>
-  <div class="social-links">
-    <a href="https://www.instagram.com/micdropkpopshop/" target="_blank" rel="noopener" class="social-link ig">
+  <div class="ig-cta">
+    <div class="ig-cta-icon">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-      @micdropkpopshop
-    </a>
+    </div>
+    <div class="ig-cta-text">
+      <p>We post new arrivals, restock alerts, and event announcements on Instagram. It's the fastest way to know what just hit the shelves.</p>
+      <p style="margin-top:0.5rem;"><a href="https://www.instagram.com/micdropkpopshop/" target="_blank" rel="noopener">@micdropkpopshop on Instagram</a></p>
+    </div>
+  </div>
+  <div class="social-links" style="margin-top: 1.2rem;">
     <a href="https://www.tiktok.com/@micdropkpopshop" target="_blank" rel="noopener" class="social-link tt">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.46V13a8.28 8.28 0 005.58 2.17v-3.44a4.85 4.85 0 01-1.99-.44l-.01-4.6z"/></svg>
-      @micdropkpopshop
+      @micdropkpopshop on TikTok
     </a>
+  </div>
+  <div class="newsletter" style="margin-top: 2rem;">
+    <p style="font-weight:500;">Get notified when the online shop launches</p>
+    <form class="newsletter-form" id="subscribe-form">
+      <input type="email" class="newsletter-input" placeholder="your@email.com" required>
+      <button type="submit" class="newsletter-submit">Sign Up</button>
+    </form>
+    <p class="newsletter-note" id="subscribe-msg">No spam, just drops. Unsubscribe anytime. <a href="privacy.html" style="color:var(--text-dim);">Privacy policy</a></p>
   </div>
 </div>
 
 <!-- FOOTER -->
 <footer class="site-footer">
-  <p><strong>Mic Drop K-Pop Shop</strong></p>
-  <p style="margin-top:0.3rem;">7601 Waters Ave, Suite C &middot; Savannah, GA 31406 &middot; (912) 672-9294</p>
-  <p style="margin-top:0.6rem;">&copy; 2026 Mic Drop K-Pop Shop</p>
+  <p><strong>Mic Drop Kpop Shop</strong></p>
+  <p style="margin-top:0.3rem;">7601 Waters Ave, Suite C &middot; Savannah, GA 31406 &middot; <a href="tel:+19126729294">(912) 672-9294</a></p>
+  <p style="margin-top:0.6rem;">&copy; 2026 Mic Drop Kpop Shop &middot; <a href="privacy.html">Privacy</a></p>
 </footer>
 
 <script>
-function setTheme(name) {
-  document.body.setAttribute('data-theme', name);
-  document.querySelectorAll('.theme-btn').forEach(function(btn) {
-    var btnName = btn.textContent.trim().toLowerCase().replace(/\s+/g, '-');
-    btn.classList.toggle('active', btnName === name);
-  });
-  try { localStorage.setItem('micdrop-theme', name); } catch(e) {}
-}
-try {
-  var saved = localStorage.getItem('micdrop-theme');
-  if (saved) setTheme(saved);
-} catch(e) {}
-// ANALYTICS: uncomment when GoatCounter is live
-// Track directions clicks and phone taps — the two metrics that matter
-// document.querySelectorAll('[data-track]').forEach(function(el) {
-//   el.addEventListener('click', function() {
-//     if (window.goatcounter) {
-//       window.goatcounter.count({path: 'action/' + el.getAttribute('data-track'), event: true});
-//     }
-//   });
-// });
-
 document.addEventListener('click', function(e) {
   var nav = document.querySelector('.nav-links');
   if (nav && nav.classList.contains('open') && !e.target.closest('.site-nav')) {
     nav.classList.remove('open');
   }
+});
+function toggleTheme() {
+  var body = document.body;
+  var current = body.getAttribute('data-theme');
+  var next = current === 'lavender' ? 'stage-lights' : 'lavender';
+  body.setAttribute('data-theme', next);
+  localStorage.setItem('micdrop-theme', next);
+  var btn = document.querySelector('.theme-toggle');
+  if (btn) btn.innerHTML = next === 'stage-lights' ? '&#9788;' : '&#9790;';
+}
+(function() {
+  var saved = localStorage.getItem('micdrop-theme');
+  if (saved && saved !== document.body.getAttribute('data-theme')) {
+    document.body.setAttribute('data-theme', saved);
+  }
+  var btn = document.querySelector('.theme-toggle');
+  if (btn) btn.innerHTML = (saved || 'lavender') === 'stage-lights' ? '&#9788;' : '&#9790;';
+})();
+var sf = document.getElementById('subscribe-form');
+if (sf) sf.addEventListener('submit', function(e) {
+  e.preventDefault();
+  var email = sf.querySelector('input').value.trim();
+  var msg = document.getElementById('subscribe-msg');
+  if (!email) return;
+  sf.querySelector('button').disabled = true;
+  fetch('/api/subscribe', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({email: email, source: 'website'})
+  }).then(function(r) { return r.json(); }).then(function(d) {
+    if (d.ok && d.existing) {
+      msg.textContent = "You're already on the list! We'll be in touch.";
+      sf.querySelector('input').value = '';
+    } else if (d.ok) {
+      msg.textContent = "You're in! We'll let you know when the shop goes live.";
+      sf.querySelector('input').value = '';
+    } else {
+      msg.textContent = d.error || 'Something went wrong. Try again?';
+    }
+    sf.querySelector('button').disabled = false;
+  }).catch(function() {
+    msg.textContent = 'Something went wrong. Try again?';
+    sf.querySelector('button').disabled = false;
+  });
 });
 </script>
 </body>

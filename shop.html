@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Shop Coming Soon | Mic Drop Kpop Shop</title>
+<meta name="description" content="Online shopping is coming soon to Mic Drop Kpop Shop! Sign up to be the first to know when our online store launches.">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Online Shop Coming Soon | Mic Drop Kpop Shop">
+<meta property="og:description" content="Online shopping is coming soon to Mic Drop Kpop Shop in Savannah, GA. Sign up to be notified!">
+<meta property="og:image" content="https://micdropkpop.com/images/og-image.jpg">
+<meta property="og:url" content="https://micdropkpop.com/shop.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://micdropkpop.com/shop.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="lavender">
+
+<!-- NAV -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="images/logo.png" alt="Mic Drop Kpop">
+      <strong>Mic Drop Kpop</strong>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#visit">Visit Us</a>
+      <a href="index.html#visit">Visit Us</a>
+      <a href="index.html#gallery">Gallery</a>
+    </div>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<!-- COMING SOON -->
+<section class="hero" style="min-height:80vh;">
+  <div class="hero-content">
+    <div class="logo-wrap">
+      <img src="images/logo.png" alt="Mic Drop Kpop Shop Logo" width="140" height="140">
+    </div>
+
+    <h1>Online Shop Coming Soon</h1>
+    <p class="tagline" style="font-size:1.1rem;letter-spacing:1px;margin-top:0.5rem;">We're working on bringing Mic Drop to your door</p>
+
+    <div style="max-width:480px;margin:2rem auto;text-align:left;line-height:1.8;font-size:0.95rem;color:var(--text-muted);">
+      <p>Soon you'll be able to browse albums, pre-order comebacks with exclusive POBs, and get everything shipped or ready for pickup.</p>
+      <p style="margin-top:1rem;">In the meantime, you can always:</p>
+      <ul style="margin-top:0.5rem;padding-left:1.2rem;">
+        <li><a href="https://www.instagram.com/micdropkpopshop/" target="_blank" rel="noopener">DM us on Instagram</a> to pre-order or reserve items</li>
+        <li><a href="tel:+19126729294">Call (912) 672-9294</a> during store hours</li>
+        <li><a href="index.html#visit">Visit us</a> Wed-Sat, 12:30-7pm in Savannah</li>
+      </ul>
+    </div>
+
+
+    <div class="newsletter" style="margin-top: 2rem;">
+      <p style="font-weight:500;">Get notified when we launch</p>
+      <form class="newsletter-form" id="subscribe-form">
+        <input type="email" class="newsletter-input" placeholder="your@email.com" required>
+        <button type="submit" class="newsletter-submit">Sign Up</button>
+      </form>
+      <p class="newsletter-note" id="subscribe-msg">No spam, just drops. Unsubscribe anytime. <a href="privacy.html" style="color:var(--text-dim);">Privacy policy</a></p>
+    </div>
+
+    <a href="index.html" class="btn-outline" style="margin-top:1.5rem;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to Main Site
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p><strong>Mic Drop Kpop Shop</strong></p>
+  <p style="margin-top:0.3rem;">7601 Waters Ave, Suite C &middot; Savannah, GA 31406 &middot; <a href="tel:+19126729294">(912) 672-9294</a></p>
+  <p style="margin-top:0.6rem;">&copy; 2026 Mic Drop Kpop Shop &middot; <a href="privacy.html">Privacy</a></p>
+</footer>
+
+<script>
+document.addEventListener('click', function(e) {
+  var nav = document.querySelector('.nav-links');
+  if (nav && nav.classList.contains('open') && !e.target.closest('.site-nav')) {
+    nav.classList.remove('open');
+  }
+});
+var sf = document.getElementById('subscribe-form');
+if (sf) sf.addEventListener('submit', function(e) {
+  e.preventDefault();
+  var email = sf.querySelector('input').value.trim();
+  var msg = document.getElementById('subscribe-msg');
+  if (!email) return;
+  sf.querySelector('button').disabled = true;
+  fetch('/api/subscribe', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({email: email, source: 'shop-page'})
+  }).then(function(r) { return r.json(); }).then(function(d) {
+    if (d.ok && d.existing) {
+      msg.textContent = "You're already on the list! We'll be in touch.";
+      sf.querySelector('input').value = '';
+    } else if (d.ok) {
+      msg.textContent = "You're in! We'll let you know when the shop goes live.";
+      sf.querySelector('input').value = '';
+    } else {
+      msg.textContent = d.error || 'Something went wrong. Try again?';
+    }
+    sf.querySelector('button').disabled = false;
+  }).catch(function() {
+    msg.textContent = 'Something went wrong. Try again?';
+    sf.querySelector('button').disabled = false;
+  });
+});
+</script>
+</body>
+</html>
